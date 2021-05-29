@@ -285,7 +285,9 @@ p {
   background-color: var(--accent-color);
   color: var(--pretty-color);
 }
-
+.mail {
+  margin-bottom: 9px;
+}
 .directions {
   font-family: Roboto;
   font-style: normal;
