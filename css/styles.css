@@ -7,6 +7,7 @@
 }
 
 body {
+  margin: 0;
   font-family: Roboto;
   letter-spacing: 0.03em;
   background: var(--white-color);
@@ -14,6 +15,10 @@ body {
 }
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
 }
 
@@ -39,7 +44,6 @@ p {
   align-items: center;
 }
 .header-nav {
-  margin-bottom: 100px;
   border-bottom: 1px solid #ececec;
   display: flex;
   /* justify-content: center; */
@@ -172,7 +176,7 @@ p {
   justify-content: center;
 }
 .examples {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
@@ -182,7 +186,6 @@ p {
 }
 .images {
   display: flex;
-  /* margin-bottom: 188px; */
   justify-content: center;
 }
 
@@ -190,26 +193,25 @@ p {
   margin-left: 30px;
 }
 
-.img-name {
-  width: 270px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
 .drim .img-name + .img-name {
   margin-left: 30px;
 }
 .name {
   margin-bottom: 10px;
-  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
   color: var(--title-text-color);
 }
-
+.profession-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .profession {
   margin-bottom: 30px;
   font-weight: normal;
@@ -286,7 +288,7 @@ p {
   margin-bottom: 87px;
 }
 .button-nav .sing + .sing {
-  margin-left: 30px;
+  margin-left: 8px;
 }
 .sing-link:hover {
   background-color: var(--accent-color);
@@ -316,7 +318,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: -30px;
-  /* margin-bottom: 114px; */
+  margin-bottom: -30px;
 }
 .link-group {
   padding-top: 20px;
@@ -328,7 +330,9 @@ p {
 }
 .direction-link {
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 .portfolio {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
