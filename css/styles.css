@@ -414,12 +414,13 @@ b {
   color: var(--white-color);
   display: block;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  align-items: baseline;
+  /* justify-content: center;
+  flex-wrap: wrap; */
 }
 .footer-icon {
-  flex-wrap: wrap;
+  display: flex;
+  /* align-items: baseline; */
 }
 .footer-list {
   display: block;
