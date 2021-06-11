@@ -147,9 +147,8 @@ p {
 }
 
 .anntena {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 70px;
+  height: 70px;
 }
 .anntena :hover .anntena :focus {
   fill: var(--accent-color);
@@ -300,11 +299,6 @@ p {
   margin: auto;
   display: flex;
   justify-content: center;
-  /* padding-left: 30px;
-  padding-bottom: 30px; */
-  /* width: 44px;
-  height: 44px; */
-  /* margin-top: 10px; */
 }
 
 .social-icon-item {
@@ -325,7 +319,6 @@ p {
   fill: #afb1af;
   width: 20px;
   height: 20px;
-  /* margin-right: 30px; */
 }
 .sprite-list {
   width: 100%;
@@ -372,13 +365,12 @@ p {
 .footer {
   display: block;
   background: #2f303a;
-  /* padding-top: 60px;
-  padding-bottom: 60px;
-} */
 }
-.info {
+.info .index {
   display: flex;
-  justify-content: center;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   margin-top: 20px;
@@ -412,34 +404,25 @@ b {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  display: block;
-  display: flex;
-  align-items: baseline;
-  /* justify-content: center;
-  flex-wrap: wrap; */
 }
 .footer-icon {
   display: flex;
-  /* align-items: baseline; */
 }
 .footer-list {
-  display: block;
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 20px;
 }
 .footer-item:not(:last-child) {
   margin-right: 10px;
 }
-
+.footer-address-container {
+  padding-right: 70px;
+}
 .footer-icons {
-  background-color: rgba(255, 255, 255, 0.1);
-  /* display: block; */
   width: 44px;
   height: 44px;
   fill: var(--white-color);
-  padding: 12px;
+  padding: 12px 12px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -449,7 +432,7 @@ b {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
-  height: 44px;
+
   cursor: pointer;
 }
 
@@ -528,6 +511,18 @@ b {
 .direction-link {
   margin-left: 30px;
   margin-bottom: 30px;
+}
+.card-link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.card-link:hover,
+.card-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 .portfolio {
   padding-top: 94px;
