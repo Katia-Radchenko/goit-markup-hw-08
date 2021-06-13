@@ -306,14 +306,18 @@ p {
   width: 44px;
   height: 44px;
   cursor: pointer;
-  padding: 12px;
+  /* padding: 12px; */
 }
-.social-icon-item:hover {
+/* .sprite-list:hover {
   background-color: var(--accent-color);
-}
-.sprite :hover {
+} */
+.social-icon-item :hover {
+  background: var(--accent-color);
   fill: var(--white-color);
-  stroke: var(--white-color);
+}
+.social-icon-item :focus {
+  background: var(--accent-color);
+  fill: var(--white-color);
 }
 .sprite {
   fill: #afb1af;
@@ -323,10 +327,11 @@ p {
 .sprite-list {
   width: 100%;
   height: 100%;
-  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .clients-list {
   display: flex;
@@ -352,16 +357,23 @@ p {
   padding-bottom: 94px;
 }
 .client-logo:hover,
-.clients-list-item:hover {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
+.clients-list-item:hover,
 .client-logo:focus,
 .clients-list-item:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
+
+.drim .icons-list {
+  /* width: 20px;
+  height: 20px; */
+  fill: currentColor;
+}
+/* .client-logo:focus,
+.clients-list-item:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+} */
 .footer {
   display: block;
   background: #2f303a;
