@@ -1,0 +1,50 @@
+.drim-tim {
+  padding-bottom: 94px;
+  background: #f5f4fa;
+}
+.drim-list {
+  display: flex;
+}
+.drim-list .images-list__item + .images-list__item {
+  margin-left: 30px;
+}
+.examples-title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  color: var(--title-text-color);
+  align-items: center;
+}
+.drim-list .drim-list__item + .drim-list__item {
+  margin-left: 30px;
+}
+.profession-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+profession_description {
+  @include font(16px, 1.187, 0.03em);
+  text-align: center;
+}
+.profession__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  @include font(16px, 1.187, 0.03em);
+  text-align: center;
+  color: var(--title-text-color);
+}
+.our-works-text__description {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}

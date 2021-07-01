@@ -1,0 +1,25 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixin';
+
+@import './base/reset';
+@import './base/body';
+@import './base/section';
+@import './base/container';
+@import './base/portfolio-card';
+
+@import './components/logo';
+@import './components/button';
+@import './components/section-title';
+@import './components/social-list';
+@import './components/modal-window';
+
+@import './layout/header';
+@import './layout/hero-section';
+@import './layout/advantages-section';
+@import './layout/definition-list';
+@import './layout/our-team-section';
+@import './layout/clients-list';
+@import './layout/footer';
+@import './layout/portfolio-page';
