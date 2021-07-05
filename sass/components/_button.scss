@@ -24,8 +24,8 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-&:hover,
-&:focus {
+.portfolio-buttons__button:hover,
+.portfolio-buttons__button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -46,8 +46,8 @@
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-&:hover,
-&:focus {
+.data .button:hover,
+.data .button:focus {
   background-color: #188ce8;
 }
 .portfolio-buttons {
@@ -58,8 +58,8 @@
 .portfolio-buttons .portfolio-buttons__item + .portfolio-buttons__item {
   margin-left: 8px;
 }
-&:hover,
-&:focus {
+.portfolio-buttons__button:hover,
+.portfolio-buttons__button:focus {
   background-color: var(--accent-color);
   color: var(--pretty-color);
 }
@@ -81,8 +81,8 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&:hover,
-&:focus {
+.submit-button:hover,
+.submit-button:focus {
   background-color: #188ce8;
   cursor: pointer;
 }
@@ -107,8 +107,8 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-&:hover,
-&:focus {
+.subscribe-form__button:hover,
+.subscribe-form__button:focus {
   background-color: var(--hero-button-hover-color);
 }
 

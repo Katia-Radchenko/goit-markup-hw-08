@@ -25,11 +25,11 @@
   color: #afb1b8;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-&:hover,
-&:focus {
+.our-clients__link:hover,
+.our-clients__link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
-&:focus-visible {
+.our-clients__link:focus-visible {
   border: 1px solid var(--accent-color);
 }
