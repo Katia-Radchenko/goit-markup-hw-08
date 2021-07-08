@@ -19,3 +19,12 @@
   text-align: center;
   color: var(--white-color);
 }
+.data {
+  // padding: 10px 32px;
+  border: 0;
+  border-radius: 4px;
+}
+.data:hover,
+.data:focus {
+  background-color: #188ce8;
+}

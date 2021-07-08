@@ -1,15 +1,94 @@
+.anntena {
+  width: 70px;
+  height: 70px;
+}
+.anntena :hover .anntena :focus {
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+}
 .definition-list {
   display: flex;
+}
+.direction-link {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.card-link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.card-link:hover,
+.card-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+.portfolio-list__link:hover .portfolio-card,
+.portfolio-list__link:focus .portfolio-card {
+  transform: translateY(0);
+}
+.portfolio-list__link:hover,
+.portfolio-list__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  cursor: pointer;
+}
+.portfolio-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(101%);
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-tehno {
+  position: relative;
+  overflow: hidden;
+}
+.card-text {
+  padding: 63px 24px;
+  @include font(18px, 1.555, 0.03em);
+  color: var(--white-color);
+}
+
+.portfolio-list__content {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  background: var(--white-color);
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .description-list__item {
   width: 270px;
 
   margin-right: 30px;
 }
-.description-list__item {
-  width: 270px;
-  margin-right: 30px;
+.portfolio-list__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
 }
+// .portfolio-list__description {
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 16px;
+//   line-height: 1.875;
+//   color: #757575;
+// }
+
 .description-list__img {
   @extend %flex-align-justify;
   height: 120px;

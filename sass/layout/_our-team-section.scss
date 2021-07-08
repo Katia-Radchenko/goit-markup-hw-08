@@ -8,17 +8,12 @@
 .drim-list .images-list__item + .images-list__item {
   margin-left: 30px;
 }
-.examples-title {
-  margin-bottom: 50px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.166;
-  text-align: center;
-  color: var(--title-text-color);
-  align-items: center;
-}
+
 .drim-list .drim-list__item + .drim-list__item {
   margin-left: 30px;
+}
+.our {
+  display: block;
 }
 .profession-name {
   padding-top: 30px;
@@ -28,7 +23,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-profession_description {
+.profession_description {
   @include font(16px, 1.187, 0.03em);
   text-align: center;
 }
@@ -39,12 +34,51 @@ profession_description {
   text-align: center;
   color: var(--title-text-color);
 }
-.our-works-text__description {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.social-list {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.social-list__item {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: var(--accent-color);
   color: var(--white-color);
+}
+
+.sprite {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  color: #afb1af;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
 }

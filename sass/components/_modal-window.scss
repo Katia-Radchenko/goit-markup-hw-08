@@ -12,12 +12,12 @@
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -37,34 +37,17 @@
   background-color: var(--white-color);
 }
 
-.modal__button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  @extend %flex-align-justify;
-  width: 30px;
-  height: 30px;
-
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--white-color);
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  & .input {
-    fill: var(--title-text-color);
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &:hover .input {
-    fill: var(--accent-color);
-  }
+.modal-icon {
+  fill: #000000;
+}
+.modal__button:hover .modal-icon {
+  fill: var(--accent-color);
 }
 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
 .modal__title {
   margin-bottom: 12px;
 
@@ -74,12 +57,6 @@
 
   color: var(--title-text-color);
 }
-
-.modal-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .modal-form__label {
   width: 100%;
   margin-bottom: 10px;
@@ -88,7 +65,20 @@
 
   color: var(--primary-text-color);
 }
+.modal-form__wrapper {
+  position: relative;
+}
+.modal-form__wrapper .input {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
 
+  fill: var(--title-text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-form__input {
   width: 100%;
   height: 40px;
@@ -99,18 +89,21 @@
   border-radius: 4px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:focus {
-    border-color: var(--accent-color);
-    outline: none;
-  }
 }
 
-.modal-form__wrapper {
-  position: relative;
+.modal-form__input:focus + .input {
+  fill: var(--accent-color);
+}
+
+.modal-form__input:hover,
+.modal-form__textarea:hover,
+.modal-form__label:hover {
+  cursor: pointer;
+}
+
+.modal-form__input:focus {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .modal-form__wrapper .input {
@@ -127,7 +120,16 @@
 .modal-form__input:focus + .input {
   fill: var(--accent-color);
 }
-
+.input {
+  fill: currentColor;
+}
+.modal-policy-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  @include font(14px, 1.714, 0.03em);
+}
 .modal-form__textarea {
   width: 100%;
   height: 120px;
@@ -158,10 +160,6 @@
   margin-top: 10px;
 
   @include font(14px, 1.714, 0.03em);
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .checkbox-icon-wrapper {
