@@ -1,10 +1,11 @@
 .anntena {
   width: 70px;
   height: 70px;
-}
-.anntena :hover .anntena :focus {
-  fill: var(--accent-color);
-  stroke: var(--accent-color);
+
+  & :hover &:focus {
+    fill: var(--accent-color);
+    stroke: var(--accent-color);
+  }
 }
 .definition-list {
   display: flex;
@@ -18,12 +19,13 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-}
-.card-link:hover,
-.card-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
 }
 .portfolio-list__link:hover .portfolio-card,
 .portfolio-list__link:focus .portfolio-card {
@@ -80,14 +82,6 @@
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
-// .portfolio-list__description {
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 16px;
-//   line-height: 1.875;
-//   color: #757575;
-// }
 
 .description-list__img {
   @extend %flex-align-justify;
