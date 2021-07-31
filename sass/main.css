@@ -489,10 +489,10 @@ nav__logo--color-black {
   cursor: pointer;
 }
 
-&:focus {
+/* &:focus {
   border-color: var(--accent-color);
   outline: none;
-}
+} */
 
 .modal-form__textarea::-webkit-input-placeholder {
   font-size: 12px;
@@ -1057,3 +1057,8 @@ social-list__link .drim-list .drim-list__item + .drim-list__item {
   color: var(--white-color);
 }
 /*# sourceMappingURL=main.css.map */
+/* @media screen and (min-width: 900px) {
+  .footer {
+    background: #90a323;
+  }
+} */
