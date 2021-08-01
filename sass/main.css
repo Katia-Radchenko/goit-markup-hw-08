@@ -9,6 +9,13 @@
   --hero-background: #2f303a;
 }
 
+
+
+
+.modal-icon:hover, .modal-icon:focus{
+    fill: var(--accent-color);
+  }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -182,23 +189,31 @@ nav__logo--color-black {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .button {
-  padding: 10px 32px;
-  border: 0;
-  border-radius: 4px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: 250ms;
-  background-color: cubic-bezier(0.4, 0, 0.2, 1);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--white-color);
+  background-color: var(--accent-color);
   cursor: pointer;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover, .button:focus {
+  background-color: var(--accent-color);
+}
+
+.hero__button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
 }
 
 .data .button:hover,
@@ -708,31 +723,7 @@ nav__logo--color-black {
   margin-left: 30px;
 }
 
-.hero {
-  background-size: 1600px;
-  padding-top: 200px;
-  padding-bottom: 210px;
-  text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: var(--hero-background);
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(47, 48, 58, 0.4)),
-      to(rgba(47, 48, 58, 0.4))
-    ),
-    url('../images/tims.jpg');
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/tims.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+/*  */
 
 .hero__title {
   margin-bottom: 30px;
@@ -765,7 +756,7 @@ nav__logo--color-black {
   display: flex;
 }
 
-.description-list__item {
+/* .description-list__item {
   width: 270px;
   margin-right: 30px;
 }
@@ -773,7 +764,7 @@ nav__logo--color-black {
 .description-list__item {
   width: 270px;
   margin-right: 30px;
-}
+} */
 
 .description-list__img {
   height: 120px;

@@ -4,6 +4,9 @@
 }
 .drim-list {
   display: flex;
+  @media screen {
+    
+  }
 }
 .drim-list .images-list__item + .images-list__item {
   margin-left: 30px;

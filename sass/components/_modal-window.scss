@@ -36,10 +36,32 @@
 
   background-color: var(--white-color);
 }
-
-.modal-icon {
-  fill: #000000;
+@media screen and (max-width: 479px) {
+  .modal {
+    padding: 15px;
+  }
 }
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
+
+
 .modal__button:hover .modal-icon {
   fill: var(--accent-color);
 }
@@ -154,12 +176,13 @@
   }
 }
 
-.modal-policy {
-  @extend %flex-align-justify;
-  margin-top: 10px;
-
-  @include font(14px, 1.714, 0.03em);
+@media screen and (min-width: 1200px) {
+  .modal-policy {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
+
 
 .checkbox-icon-wrapper {
   @extend %flex-align-justify;

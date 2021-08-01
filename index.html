@@ -45,20 +45,30 @@
                 +38 096 111 11 11
               </a>
             </li>
-          </ul> 
-          </div>
-          <!-- мобильная версия -->
-          <button
+          </ul>
+          <!-- <button
           type="button"
           class="mobile-menu__button js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="modal-icon" width="40" height="40">
+          <svg class="modal-meny" width="40" height="40">
             <use href="./images/icon/symbol-meny.svg#icon-menu"></use>
           </svg>
-        </button>
-        <div class="menu-container js-menu-container" id="mobile-menu">
+        </button>  -->
+          </div>
+          <!-- мобильная версия
+          <!-- <button
+          type="button"
+          class="mobile-menu__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="modal-meny" width="40" height="40">
+            <use href="./images/icon/symbol-meny.svg#icon-menu"></use>
+          </svg>
+        </button> -->
+        <!-- <div class="menu-container js-menu-container" id="mobile-menu">
           <ul class="nav-list">
             <li class="nav-list__item">
               <a href="./index.html" class="nav-list__link nav-list__link--current">Студия</a>
@@ -105,7 +115,7 @@
             <svg class="modal-icon" width="19" height="19">
               <use href="./images/icon/defs.svg#icon-close"></use>
             </svg>
-          </button>
+          </button> -->
         </div>
          </nav>
       </div>
@@ -117,7 +127,7 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button type="button" class="button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button hero__button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section-definition">
@@ -170,7 +180,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section examples">
         <div class="container">
           <h2 class="examples-title">Чем мы занимаемся</h2>
           <ul class="images-list">
@@ -207,7 +217,32 @@
           <h2 class="examples-title">Наша команда</h2>
           <ul class="drim-list">
             <li class="drim-list__item">
-              <img class="our" src="./images/product.jpg" alt="Product Designer" width="270" />
+              <li class="team-list__item">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/our-team/desktop-team-1-1x.jpg 1x,
+                      ./images/our-team/desktop-team-1-2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/our-team/tablet-team-1-1x.jpg 1x,
+                      ./images/our-team/tablet-team-1-2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/our-team/team-1-1x.jpg 1x, ./images/our-team/team-1-2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/our-team/team-1-1x.jpg." alt="Игорь Демьяненко" />
+                </picture>
+              <!-- <img class="our" src="./images/product.jpg" alt="Product Designer" width="270" /> -->
               <div class="profession-name">
                 <h3 class="profession__title">Игорь Демьяненко</h3>
                 <p class="profession_description">Product Designer</p>
