@@ -2,6 +2,10 @@
   text-decoration: none;
   color: inherit;
   display: flex;
+  @media  screen and (max-width: 767px){
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .clients-list__item {
@@ -10,13 +14,55 @@
 
   &:not(:last-child) {
     margin-right: 30px;
+    @media screen and (max-width: 767px){
+      margin-bottom: 30px;
+      
+    }
   }
 }
+.our-clients-list__item {
+  height: 92px;
+}
+
+@media screen and (max-width: 767px) {
+  .our-clients-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+  .our-clients-list__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .our-clients-list__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients-list__item {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+  .our-clients-list__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .our-clients-list__item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+}
+
+// @media screen and (min-width: 1200px) {
+//   .our-clients-list__item {
+//     width: calc((100% - 5 * 30px) / 6);
+//   }
+//   .our-clients-list__item:not(:last-child) {
+//     margin-right: 30px;
+  
+//   }
+
 .client-logo {
   fill: currentColor;
   width: 106px;
+  @media  screen and (min-width: 1199px){
   height: 60px;
-}
+}}
 .our-clients__link {
   @extend %flex-align-justify;
   width: 100%;

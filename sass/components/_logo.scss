@@ -16,3 +16,14 @@
   font-size: 26px;
   line-height: 1.192;
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    padding: 16px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+}
