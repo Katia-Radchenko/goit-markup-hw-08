@@ -665,7 +665,8 @@ body {
 .modal-meny {
   display: flex;
   align-items: center;
-  margin-left: 200px;
+  margin-left: 180px;
+  width: auto;
 }
 
 .header {
