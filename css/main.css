@@ -662,6 +662,12 @@ body {
   text-decoration: underline;
 }
 
+.modal-meny {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+
 .header {
   position: relative;
 }
