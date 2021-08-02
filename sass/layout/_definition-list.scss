@@ -11,9 +11,11 @@
     stroke: var(--accent-color);
   }
 }
+
 .definition-list {
 width: 100%;
 }
+
 @media screen and (min-width: 768px) {
   .definition-list{
     display: flex;
@@ -47,13 +49,17 @@ width: 100%;
     margin-right: 30px;
   }
 }
+
 .description-list__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
- 
-}
+    }
+
 
 .direction-link {
   margin-left: 30px;

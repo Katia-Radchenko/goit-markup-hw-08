@@ -22,10 +22,13 @@
 }
 .info .index {
   display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
-}
+  @media  screen and (min-width: 1199px){
+    align-items: baseline;
+   
+  }}
+
 
 @media screen and (max-width: 1199px) {
   .index{
@@ -36,6 +39,8 @@
   }
 }
 
+
+
 @media screen and (min-width: 1200px) {
   .index {
     margin-right: 70px;
@@ -44,6 +49,9 @@
 
 .footer-address-container {
   padding-right: 70px;
+  @media screen and (max-width: 480px){
+    padding-bottom: 60px;
+      }
 }
 .logo-footer {
   font-family: Raleway;
@@ -62,10 +70,11 @@
 }
 
 
-@media screen and (min-width: 1200px){
-.footer-contacts__item {
-  margin-bottom: 9px;
-}}
+@media screen and (min-width: 1200px) {
+  .footer-contacts__item:nth-child(1) {
+    margin-bottom: 9px;
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .footer-contacts__item:nth-child(1) {
@@ -132,10 +141,23 @@
   height: 20px;
 }
 
-.subscribe-box {
-  margin-left: auto;
+@media screen and (max-width: 1199px) {
+  .subscribe-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .subscribe-box {
+    margin-left: auto;
+  }
+}
+
+
 .footer__title {
+  margin-top: 60px;
   margin-bottom: 20px;
 
   font-weight: 500;
@@ -145,11 +167,15 @@
 
   color: var(--white-color);
 }
-.subscribe-form {
-  display: flex;
+@media screen and (max-width: 1199px) {
+  .subscribe-form {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
 .subscribe-form__input {
+  margin-bottom: 20px;
   width: 358px;
 
   padding: 15px;
@@ -162,6 +188,20 @@
 
   cursor: pointer;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
+
 .link-icon {
   text-decoration: none;
   color: inherit;
@@ -180,9 +220,7 @@
 
   background-color: var(--accent-color);
   color: var(--white-color);
-
   cursor: pointer;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -190,6 +228,7 @@
     background-color: var(--hero-button-hover-color);
   }
 }
+
 .subscribe-form__button .input {
   margin-left: 10px;
 }
