@@ -6,15 +6,15 @@ body {
   color: var(--primary-text-color);
   color: #afb1af;
 }
-@media screen and (max-width: 769px){
-  .section-definition{
-*{
-  box-shadow: none;
-}
-::after{
-  box-shadow: none;
-}
-:before{
-  box-sizing:none}
+// @media screen and (max-width: 769px){
+//   .section-definition{
+// *{
+//   box-shadow: none;
+// }
+// ::after{
+//   box-shadow: none;
+// }
+// :before{
+//   box-sizing:none}
   
-}}
+// }}
