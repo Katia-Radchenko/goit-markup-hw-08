@@ -3,14 +3,19 @@
   display: none;}
 }
 .examples-title {
-  margin-bottom: 50px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.166;
+  
   text-align: center;
   color: var(--title-text-color);
   align-items: center;
-}
+  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    
+      font-size: 36px;
+      line-height: 1.166;
+    }
+  }
+
+
 .our-works-examples {
   position: absolute;
   bottom: 0;
