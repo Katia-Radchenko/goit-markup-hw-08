@@ -96,7 +96,6 @@ body {
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -869,7 +868,7 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .header-nav {
     display: none;
   }
