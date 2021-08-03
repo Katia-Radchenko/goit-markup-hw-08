@@ -127,9 +127,9 @@
 }
 .header-nav {
   display: block;
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   display: none;
+  // }
 }
 .menu-container {
   position: fixed;
