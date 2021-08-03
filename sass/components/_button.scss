@@ -24,12 +24,6 @@
   display: flex;
 }
 
-// .portfolio-buttons .portfolio-buttons__item + .portfolio-buttons__item {
-//   margin-left: 8px;
-// }
-// .portfolio-buttons .portfolio-buttons__item + .portfolio-buttons__item {
-//   margin-left: 8px;
-// }
 @media screen and (min-width: 767px) {
 .portfolio-buttons {
   display: -webkit-box;
@@ -64,16 +58,12 @@
 }
 
 
-
-
-
 @media screen and (max-width: 767px) {
   .portfolio-buttons {
     margin-bottom: 25px;
     flex-wrap: wrap;
   }
 }
-
 
 
 .portfolio-buttons__item {
