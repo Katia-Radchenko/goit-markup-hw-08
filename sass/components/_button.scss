@@ -32,7 +32,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 87px;
+  margin-bottom: 50px;
   }}
 
 .portfolio-buttons__button:hover,
@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 767px) {
   .portfolio-buttons__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 
@@ -63,6 +63,9 @@
     margin-bottom: 25px;
     flex-wrap: wrap;
   }
+}
+.close {
+  padding-right: 87px;
 }
 
 

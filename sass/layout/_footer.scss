@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 }
 
@@ -77,15 +77,15 @@
   line-height: 1.192;
   color: var(--white-color);
 }
-// .address {
-//   margin-top: 20px;
-//   margin-bottom: 9px;
-//   font-style: normal;
-//   font-weight: normal;
+.address {
+  margin-top: 20px;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: normal;
 
-//   @include font(14px, 1.143, 0.03em);
-//   color: var(--white-color);
-// }
+  @include font(14px, 1.143, 0.03em);
+  color: var(--white-color);
+}
 
 
 @media screen and (min-width: 1200px) {
