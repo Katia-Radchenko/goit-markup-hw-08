@@ -1010,9 +1010,7 @@ body {
   border-radius: 4px;
 }
 
-.data:hover, .data:focus {
-  background-color: #188ce8;
-}
+
 
 .hero {
   padding-top: 118px;
