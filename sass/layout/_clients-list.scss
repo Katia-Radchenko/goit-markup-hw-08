@@ -40,7 +40,7 @@
     }
   }
   
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     .clients-list__item  {
       // width: calc((100% - 2 * 30px) / 3);
       margin-top: 30px;
