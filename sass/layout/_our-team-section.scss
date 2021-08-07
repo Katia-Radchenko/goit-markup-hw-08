@@ -1,7 +1,17 @@
+
+@media screen and (min-width: 1200px){
 .drim-tim {
   padding-top: 94px;
   background: #f5f4fa;
 }
+}
+@media screen and (max-width: 1199px){
+  .drim-tim  {
+    background: #f5f4fa;
+      padding-top: 60px;
+      }}
+
+
 
 .drim-list{
   width: 100%;

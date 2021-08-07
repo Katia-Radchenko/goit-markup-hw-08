@@ -47,6 +47,11 @@
       margin-right: 30px;
     }
   }
+  // @media screen and (max-width: 1199px) {
+  //   .clients-list{
+  //     margin-top: -30px;
+  //   }
+  // }
     @media screen and (min-width: 1200px) {
       .clients-list__item:not(:last-child)  {
         // width: calc((100% - 2 * 30px) / 3);
@@ -55,12 +60,12 @@
       }
     }
     
-    @media screen and (min-width: 1200px) {
-      .clients-list__item  {
-        // width: calc((100% - 2 * 30px) / 3);
-        margin-top: 30px;
+    // @media screen and (min-width: 1200px) {
+    //   .clients-list__item  {
+    //     // width: calc((100% - 2 * 30px) / 3);
+    //     margin-top: 30px;
   
-      }}
+    //   }}
 
 
 

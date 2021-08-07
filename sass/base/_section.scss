@@ -3,12 +3,34 @@
   padding-bottom: 94px;
   display: block;
 }
+@media screen and (max-width: 1199px){
+  .section-definition {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+  }}
+
+
 .section {
   padding-bottom: 94px;
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 1199px){
+  .section  {
+  
+    padding-bottom: 60px;
+    
+  }}
+
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px){
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+  }}
+

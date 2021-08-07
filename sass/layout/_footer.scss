@@ -30,16 +30,39 @@
   }}
 
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px)  {
   .index{
     display: flex;
     flex-direction: column;
     align-items: center;
     // margin-bottom: 60px;
   }
+  .footer-icons{
+    margin-bottom: 60px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .index{
+    align-items: center;
+justify-content: center;
+  }
+  .footer-icons{
+    margin-bottom: 97px;
+  }
 
+}
+@media screen and (min-width: 1200px)  {
+  .index{
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    // margin-bottom: 60px;
+  }
+   .footer-icons{
+    margin-bottom: 60px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .footer-address-container {
@@ -105,7 +128,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 }
 
@@ -128,11 +151,8 @@
 }
 .footer-list__item {
   color: var(--white-color);
-  border-radius: 50%;
-  border: 0;
   width: 44px;
   height: 44px;
-  cursor: pointer;
 
   &:not(:last-child) {
     margin-right: 10px;
@@ -191,7 +211,7 @@
 }
 
 .footer__title {
-  margin-top: 60px;
+  // margin-top: 60px;
   margin-bottom: 20px;
 
   font-weight: 500;
@@ -240,28 +260,28 @@
   text-decoration: none;
   color: inherit;
 }
-.subscribe-form__button {
-  align-items: center;
-  padding: 10px 28px;
-  margin-left: 12px;
+// .subscribe-form__button {
+//   align-items: center;
+//   padding: 10px 28px;
+//   margin-left: 12px;
 
-  font-weight: 500;
+//   font-weight: 500;
 
-  @include font(16px, 1.875, 0.06em);
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   @include font(16px, 1.875, 0.06em);
+//   border: none;
+//   border-radius: 4px;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   background-color: var(--accent-color);
+//   color: var(--white-color);
+//   cursor: pointer;
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    background-color: var(--hero-button-hover-color);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: var(--hero-button-hover-color);
+//   }
+// }
 
 .subscribe-form__button .input {
   margin-left: 10px;
